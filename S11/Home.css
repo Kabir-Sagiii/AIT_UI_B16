@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+}
+
+#nav {
+  height: 80px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+#brandName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brandName h1 {
+  font-size: 47px;
+  color: cornsilk;
+  text-shadow: 0 0 10px black;
+}
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#links a {
+  margin-right: 50px;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+}
+#links button {
+  padding: 11px 20px;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.ad-container {
+  width: 1100px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.brandAd {
+  width: 1100px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px darkgreen;
+  height: 330px;
+}
+
+.container {
+  width: 1100px;
+  height: 500px;
+
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+#brand {
+  grid-column: 1/3;
+  grid-row: 1/5;
+  background-image: url("https://th.bing.com/th/id/OIP.Em8KMe039Jy8r9Nk0PGazwHaEo?rs=1&pid=ImgDetMain");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-position: center; */
+  color: white;
+}
+#sub-brand-top {
+  background-color: lightgreen;
+  grid-column: 3/4;
+  grid-row: 1/3;
+  background-image: url("https://wallpapercave.com/wp/wp6488868.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#sub-brand-bottom {
+  background-color: lightgray;
+  grid-column: 3/4;
+  grid-row: 3/5;
+  background-image: url("https://wallpaperaccess.com/full/3166568.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.shadow h1 {
+  margin-bottom: 15px;
+}
+.shadow button {
+  padding: 10px 20px;
+  background: none;
+  border: 2px solid green;
+  color: white;
+  font-size: 17px;
+  box-shadow: 0 0 10px red;
+  margin-top: 20px;
+}
+.shadow p {
+  text-align: center;
+}
