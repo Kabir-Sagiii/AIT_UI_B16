@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+      .card {
+        width: 270px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 0 10px black;
+      }
+
+      @media screen and (min-width: 300px) and (max-width: 550px) {
+        .container {
+          display: grid;
+          grid-template-columns: 80%;
+          margin: auto;
+        }
+      }
+
+      @media screen and (min-width: 550px) and (max-width: 650px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin: auto;
+        }
+        .card {
+          width: 240px;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 0 10px black;
+        }
+        img {
+          width: 240px;
+        }
+      }
+
+      @media screen and (min-width: 651px) and (max-width: 750px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          margin: auto;
+        }
+        .card {
+          width: 240px;
+          text-align: center;
+          padding: 10px;
+          box-shadow: 0 0 10px black;
+        }
+        img {
+          width: 240px;
+        }
+      }
+
+      @media screen and (min-width: 651px) and (max-width: 949px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin: auto;
+        }
+      }
+
+      @media screen and (min-width: 950px) and (max-width: 1200px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (min-width: 1201px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/024/354/252/non_2x/businessman-isolated-illustration-ai-generative-free-photo.jpg"
+          width="270"
+          height="270"
+        />
+        <h3>Yash Verma</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          nesciunt vero placeat rem!
+        </p>
+        <button>Profile Details</button>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/736x/ad/15/5b/ad155b4cfd5b6d220c3e5b51b349a37a.jpg"
+          width="270"
+          height="270"
+        />
+        <h3>Soniya Sharma</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          nesciunt vero placeat rem!
+        </p>
+        <button>Profile Details</button>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/originals/b8/5e/9d/b85e9df9e9b75bcce3a767eb894ef153.jpg"
+          width="270"
+          height="270"
+        />
+        <h3>Rohit Verma</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          nesciunt vero placeat rem!
+        </p>
+        <button>Profile Details</button>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://i.pinimg.com/originals/e6/78/4b/e6784b9cd722d02e014d7e60ebe25e39.jpg"
+          width="270"
+          height="270"
+        />
+        <h3>Priya Verma</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          nesciunt vero placeat rem!
+        </p>
+        <button>Profile Details</button>
+      </div>
+    </div>
+  </body>
+</html>
