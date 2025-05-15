@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeToNode() {
+        var imageDomElement = document.querySelector("img");
+        imageDomElement.src =
+          "https://th.bing.com/th/id/R.dbac99782bfe5db4558de08a09e02276?rik=%2ffXJxdSjGxmQsg&riu=http%3a%2f%2fbeca-mexico.com%2fwp-content%2fuploads%2f2023%2f02%2fnodejs_cover_photo_smaller_size.jpg&ehk=6D6D0ISByaAuSC6Aavdhf0EAsU%2fpc3ZflbiVS0c7geY%3d&risl=&pid=ImgRaw&r=0";
+
+        imageDomElement.width = "100";
+        imageDomElement.height = "100";
+
+        var h2 = document.querySelector("h2");
+        h2.innerText = "Node JS";
+
+        //for loop with in operator
+
+        for (var key in imageDomElement) {
+          console.log(key);
+        }
+      }
+
+      function changeToReact() {
+        var imageDomElement = document.querySelector("img");
+        imageDomElement.src =
+          "https://glints.com/id/lowongan/wp-content/uploads/2020/10/logo-reactjs-1024x584.jpg";
+        imageDomElement.width = "300";
+        imageDomElement.height = "300";
+        var h2 = document.querySelector("h2");
+        h2.innerText = "React JS JS";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>React JS</h2>
+    <img
+      src="https://glints.com/id/lowongan/wp-content/uploads/2020/10/logo-reactjs-1024x584.jpg"
+      width="500"
+      height="300"
+    /><br /><br />
+    <button onclick="changeToReact()">React JS</button>
+    <button onclick="changeToNode()">Node JS</button>
+  </body>
+</html>

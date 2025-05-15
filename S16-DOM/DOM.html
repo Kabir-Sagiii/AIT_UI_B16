@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getH2() {
+        var h2DomElement = document.querySelector("h2");
+        h2DomElement.innerText = "Hello Javascript";
+
+        var pDomelement = document.querySelector("p");
+        pDomelement.innerText =
+          "Javascript is Supper kool, to create Dynamic UI";
+
+        // var buttonDomElement = document.querySelector("#btn");
+        // buttonDomElement.innerText = "DOM Modified";
+
+        var buttonDomElement = document.querySelector(".box");
+        buttonDomElement.innerText = "DOM Manipulated";
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Welcome to JS</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae,
+      similique consequatur itaque voluptatum dolorum cum veritatis fuga atque
+      maxime quam illum! Aspernatur dicta quisquam illo saepe commodi nulla quae
+      quia aut vero voluptatibus? Doloribus magnam quod sequi aut accusantium,
+      repellendus dolor autem nesciunt excepturi? Quae rem quisquam expedita
+      deserunt tempora iste odit esse alias. Officiis libero exercitationem
+      quibusdam esse. Neque deserunt minima quasi, ut iure ab quibusdam quae
+      culpa minus quos incidunt, aliquam vero, id excepturi dolorum placeat
+      dolor? Cumque numquam labore ipsam aliquam provident, ab at suscipit
+      assumenda odio laudantium magni delectus accusamus dignissimos fugit
+      perferendis ullam illum. Fugit?
+    </p>
+    <button id="btn" class="box" onclick="getH2()">Submit</button>
+  </body>
+</html>
