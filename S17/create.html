@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnCreate() {
+        const pDomElement = document.createElement("p");
+
+        pDomElement.innerText = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, vel dolorum
+    deleniti, rem magnam, error doloribus commodi ducimus nobis fugiat vitae
+    assumenda dolores harum nesciunt soluta. Aliquid iste dolor vitae?`;
+
+        var bodyDomElement = document.querySelector("body");
+        bodyDomElement.appendChild(pDomElement);
+      }
+
+      function fnRemove() {
+        var paraDom = document.querySelector("p");
+        paraDom.remove();
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Create DOM Element</h2>
+    <button onclick="fnCreate()">Create DOM Element</button>
+    <button onclick="fnRemove()">Remove Para</button>
+  </body>
+</html>
